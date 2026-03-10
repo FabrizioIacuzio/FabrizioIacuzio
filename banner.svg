@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#010c03"/>
+      <stop offset="50%" stop-color="#020f04"/>
+      <stop offset="100%" stop-color="#000800"/>
+    </linearGradient>
+    <linearGradient id="tickerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#001400" stop-opacity="1"/>
+      <stop offset="8%" stop-color="#001400" stop-opacity="0"/>
+      <stop offset="92%" stop-color="#001400" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#001400" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="700" y2="0">
+      <stop offset="0%" stop-color="#00ff41"/>
+      <stop offset="50%" stop-color="#39ff14"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="700" y2="0">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffec6e"/>
+      <stop offset="100%" stop-color="#ffd700"/>
+    </linearGradient>
+    <linearGradient id="chartFill1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ff41" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00ff41" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chartFill2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b3b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ff3b3b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chartFill3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#003300" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#003300" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="gGlow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="gGlow2"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bigGlow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="scanBlur"><feGaussianBlur stdDeviation="1.5"/></filter>
+    <clipPath id="clip"><rect width="900" height="300" rx="14"/></clipPath>
+    <clipPath id="chartClip1"><rect x="0" y="0" width="220" height="300"/></clipPath>
+    <clipPath id="chartClip2"><rect x="680" y="0" width="220" height="300"/></clipPath>
+    <clipPath id="chartClipMid"><rect x="200" y="0" width="500" height="300"/></clipPath>
+  </defs>
+
+  <rect width="900" height="300" rx="14" fill="url(#bg)"/>
+  <g clip-path="url(#clip)">
+
+    <!-- ═══ MATRIX-STYLE FALLING NUMBER COLUMNS (background) ═══ -->
+    <g font-family="'Courier New', monospace" font-size="9" fill="#00ff41" opacity="0.07" text-anchor="middle">
+      <!-- col 1 -->
+      <text x="22"><animate attributeName="y" values="-10;310" dur="3.1s" repeatCount="indefinite"/>&gt;1.24</text>
+      <text x="22"><animate attributeName="y" values="-10;310" dur="3.1s" begin="-1.5s" repeatCount="indefinite"/>0.87</text>
+      <!-- col 2 -->
+      <text x="50"><animate attributeName="y" values="-10;310" dur="2.8s" begin="-0.4s" repeatCount="indefinite"/>+2.3</text>
+      <text x="50"><animate attributeName="y" values="-10;310" dur="2.8s" begin="-1.8s" repeatCount="indefinite"/>-0.5</text>
+      <!-- col 3 -->
+      <text x="78"><animate attributeName="y" values="-10;310" dur="3.4s" begin="-0.9s" repeatCount="indefinite"/>147.</text>
+      <text x="78"><animate attributeName="y" values="-10;310" dur="3.4s" begin="-2.1s" repeatCount="indefinite"/>3.02</text>
+      <!-- col 4 -->
+      <text x="106"><animate attributeName="y" values="-10;310" dur="2.6s" begin="-1.1s" repeatCount="indefinite"/>BUY</text>
+      <text x="106"><animate attributeName="y" values="-10;310" dur="2.6s" begin="-0.5s" repeatCount="indefinite"/>5.18</text>
+      <!-- col 5 -->
+      <text x="134"><animate attributeName="y" values="-10;310" dur="3.7s" begin="-2.2s" repeatCount="indefinite"/>+0.9</text>
+      <text x="134"><animate attributeName="y" values="-10;310" dur="3.7s" begin="-0.6s" repeatCount="indefinite"/>9.44</text>
+      <!-- col 6 -->
+      <text x="162"><animate attributeName="y" values="-10;310" dur="2.9s" begin="-1.4s" repeatCount="indefinite"/>SEL</text>
+      <text x="162"><animate attributeName="y" values="-10;310" dur="2.9s" begin="-0.2s" repeatCount="indefinite"/>2.71</text>
+      <!-- right side -->
+      <text x="738"><animate attributeName="y" values="-10;310" dur="3.2s" begin="-0.7s" repeatCount="indefinite"/>+1.6</text>
+      <text x="738"><animate attributeName="y" values="-10;310" dur="3.2s" begin="-2.0s" repeatCount="indefinite"/>0.33</text>
+      <text x="766"><animate attributeName="y" values="-10;310" dur="2.7s" begin="-1.3s" repeatCount="indefinite"/>BUY</text>
+      <text x="766"><animate attributeName="y" values="-10;310" dur="2.7s" begin="-0.8s" repeatCount="indefinite"/>8.91</text>
+      <text x="794"><animate attributeName="y" values="-10;310" dur="3.5s" begin="-0.3s" repeatCount="indefinite"/>-0.2</text>
+      <text x="794"><animate attributeName="y" values="-10;310" dur="3.5s" begin="-1.7s" repeatCount="indefinite"/>4.55</text>
+      <text x="822"><animate attributeName="y" values="-10;310" dur="3.0s" begin="-2.4s" repeatCount="indefinite"/>VOL</text>
+      <text x="822"><animate attributeName="y" values="-10;310" dur="3.0s" begin="-0.9s" repeatCount="indefinite"/>7.12</text>
+      <text x="850"><animate attributeName="y" values="-10;310" dur="2.5s" begin="-1.0s" repeatCount="indefinite"/>+3.1</text>
+      <text x="850"><animate attributeName="y" values="-10;310" dur="2.5s" begin="-2.5s" repeatCount="indefinite"/>1.88</text>
+      <text x="878"><animate attributeName="y" values="-10;310" dur="3.3s" begin="-0.6s" repeatCount="indefinite"/>SEL</text>
+      <text x="878"><animate attributeName="y" values="-10;310" dur="3.3s" begin="-1.6s" repeatCount="indefinite"/>6.40</text>
+    </g>
+
+    <!-- ═══ BACKGROUND STOCK CHARTS (left area) ═══ -->
+    <g clip-path="url(#chartClip1)" opacity="0.35">
+      <!-- Chart line 1 — green uptrend -->
+      <polyline fill="none" stroke="#00ff41" stroke-width="1.2"
+        points="0,200 18,190 36,195 54,178 72,182 90,165 108,170 126,155 144,148 162,140 180,128 198,122 216,108 234,115">
+        <animate attributeName="points"
+          values="0,200 18,190 36,195 54,178 72,182 90,165 108,170 126,155 144,148 162,140 180,128 198,122 216,108 234,115;
+                  0,195 18,185 36,192 54,172 72,178 90,160 108,166 126,150 144,144 162,136 180,124 198,118 216,104 234,111;
+                  0,200 18,190 36,195 54,178 72,182 90,165 108,170 126,155 144,148 162,140 180,128 198,122 216,108 234,115"
+          dur="4s" repeatCount="indefinite"/>
+      </polyline>
+      <polygon fill="url(#chartFill1)"
+        points="0,200 18,190 36,195 54,178 72,182 90,165 108,170 126,155 144,148 162,140 180,128 198,122 216,108 234,115 234,300 0,300">
+        <animate attributeName="points"
+          values="0,200 18,190 36,195 54,178 72,182 90,165 108,170 126,155 144,148 162,140 180,128 198,122 216,108 234,115 234,300 0,300;
+                  0,195 18,185 36,192 54,172 72,178 90,160 108,166 126,150 144,144 162,136 180,124 198,118 216,104 234,111 234,300 0,300;
+                  0,200 18,190 36,195 54,178 72,182 90,165 108,170 126,155 144,148 162,140 180,128 198,122 216,108 234,115 234,300 0,300"
+          dur="4s" repeatCount="indefinite"/>
+      </polygon>
+      <!-- Chart line 2 — red downtrend -->
+      <polyline fill="none" stroke="#ff3b3b" stroke-width="1" opacity="0.6"
+        points="0,100 20,108 40,102 60,118 80,112 100,125 120,120 140,135 160,128 180,142 200,150 220,158">
+        <animate attributeName="points"
+          values="0,100 20,108 40,102 60,118 80,112 100,125 120,120 140,135 160,128 180,142 200,150 220,158;
+                  0,104 20,112 40,106 60,122 80,116 100,129 120,124 140,139 160,132 180,146 200,154 220,162;
+                  0,100 20,108 40,102 60,118 80,112 100,125 120,120 140,135 160,128 180,142 200,150 220,158"
+          dur="5s" repeatCount="indefinite"/>
+      </polyline>
+    </g>
+
+    <!-- ═══ BACKGROUND STOCK CHARTS (right area) ═══ -->
+    <g clip-path="url(#chartClip2)" opacity="0.35">
+      <polyline fill="none" stroke="#00e5ff" stroke-width="1.2"
+        points="670,180 690,170 710,175 730,158 750,162 770,148 790,140 810,130 830,122 850,115 870,105 890,98">
+        <animate attributeName="points"
+          values="670,180 690,170 710,175 730,158 750,162 770,148 790,140 810,130 830,122 850,115 870,105 890,98;
+                  670,176 690,166 710,171 730,154 750,158 770,144 790,136 810,126 830,118 850,111 870,101 890,94;
+                  670,180 690,170 710,175 730,158 750,162 770,148 790,140 810,130 830,122 850,115 870,105 890,98"
+          dur="4.5s" repeatCount="indefinite"/>
+      </polyline>
+      <polygon fill="url(#chartFill3)"
+        points="670,180 690,170 710,175 730,158 750,162 770,148 790,140 810,130 830,122 850,115 870,105 890,98 890,300 670,300">
+      </polygon>
+      <polyline fill="none" stroke="#ff3b3b" stroke-width="1" opacity="0.5"
+        points="670,80 695,92 720,85 745,100 770,95 795,112 820,108 845,122 870,116 895,130">
+        <animate attributeName="points"
+          values="670,80 695,92 720,85 745,100 770,95 795,112 820,108 845,122 870,116 895,130;
+                  670,84 695,96 720,89 745,104 770,99 795,116 820,112 845,126 870,120 895,134;
+                  670,80 695,92 720,85 745,100 770,95 795,112 820,108 845,122 870,116 895,130"
+          dur="3.8s" repeatCount="indefinite"/>
+      </polyline>
+    </g>
+
+    <!-- ═══ CANDLESTICK CHART (bottom background) ═══ -->
+    <g opacity="0.22" transform="translate(150,0)">
+      <!-- green candles -->
+      <g fill="#00ff41" stroke="#00ff41" stroke-width="0.5">
+        <line x1="30"  y1="235" x2="30"  y2="265"/><rect x="26"  y="240" width="8" height="20" rx="1"/>
+        <line x1="65"  y1="220" x2="65"  y2="255"/><rect x="61"  y="225" width="8" height="22" rx="1"/>
+        <line x1="135" y1="210" x2="135" y2="248"/><rect x="131" y="215" width="8" height="24" rx="1"/>
+        <line x1="205" y1="200" x2="205" y2="238"/><rect x="201" y="205" width="8" height="24" rx="1"/>
+        <line x1="240" y1="192" x2="240" y2="230"/><rect x="236" y="197" width="8" height="24" rx="1"/>
+        <line x1="310" y1="182" x2="310" y2="220"/><rect x="306" y="187" width="8" height="24" rx="1"/>
+        <line x1="380" y1="170" x2="380" y2="208"/><rect x="376" y="175" width="8" height="24" rx="1"/>
+        <line x1="450" y1="160" x2="450" y2="198"/><rect x="446" y="165" width="8" height="24" rx="1"/>
+        <line x1="520" y1="148" x2="520" y2="186"/><rect x="516" y="153" width="8" height="24" rx="1"/>
+        <line x1="555" y1="138" x2="555" y2="176"/><rect x="551" y="143" width="8" height="24" rx="1"/>
+      </g>
+      <!-- red candles -->
+      <g fill="#ff3b3b" stroke="#ff3b3b" stroke-width="0.5">
+        <line x1="100" y1="228" x2="100" y2="260"/><rect x="96"  y="232" width="8" height="22" rx="1"/>
+        <line x1="170" y1="205" x2="170" y2="240"/><rect x="166" y="212" width="8" height="20" rx="1"/>
+        <line x1="275" y1="190" x2="275" y2="225"/><rect x="271" y="196" width="8" height="22" rx="1"/>
+        <line x1="345" y1="178" x2="345" y2="212"/><rect x="341" y="184" width="8" height="20" rx="1"/>
+        <line x1="415" y1="168" x2="415" y2="202"/><rect x="411" y="174" width="8" height="20" rx="1"/>
+        <line x1="485" y1="154" x2="485" y2="190"/><rect x="481" y="160" width="8" height="22" rx="1"/>
+      </g>
+    </g>
+
+    <!-- ═══ HORIZONTAL GRID LINES ═══ -->
+    <g stroke="#00ff41" stroke-width="0.3" opacity="0.08">
+      <line x1="0" y1="60"  x2="900" y2="60"/>
+      <line x1="0" y1="120" x2="900" y2="120"/>
+      <line x1="0" y1="180" x2="900" y2="180"/>
+      <line x1="0" y1="240" x2="900" y2="240"/>
+    </g>
+    <!-- vertical grid -->
+    <g stroke="#00ff41" stroke-width="0.3" opacity="0.05">
+      <line x1="180" y1="0" x2="180" y2="300"/>
+      <line x1="360" y1="0" x2="360" y2="300"/>
+      <line x1="540" y1="0" x2="540" y2="300"/>
+      <line x1="720" y1="0" x2="720" y2="300"/>
+    </g>
+
+    <!-- ═══ SCROLLING TICKER TAPE (top) ═══ -->
+    <rect x="0" y="0" width="900" height="22" fill="#000d00" opacity="0.9"/>
+    <rect x="0" y="21" width="900" height="0.5" fill="#00ff41" opacity="0.3"/>
+    <g clip-path="url(#clip)">
+      <text font-family="'Courier New', monospace" font-size="10" y="15" fill="#00ff41" opacity="0.9" letter-spacing="0.5">
+        <animate attributeName="x" values="900;-2400" dur="18s" repeatCount="indefinite" calcMode="linear"/>
+        ▲ AAPL  189.84  +1.24%    ▼ TSLA  172.63  -2.11%    ▲ NVDA  895.44  +3.47%    ▼ META  484.10  -0.88%    ▲ AMZN  185.07  +0.64%    ▲ MSFT  415.32  +0.92%    ▼ GOOG  175.98  -0.43%    ▲ BTC  67,842  +2.34%    ▼ ETH  3,412  -1.12%    ▲ SPX  5,218  +0.87%    ▲ GOLD  2,341  +0.55%    ▼ OIL  78.22  -1.03%
+      </text>
+    </g>
+    <!-- fade edges on ticker -->
+    <rect x="0" y="0" width="60" height="22" fill="url(#tickerGrad)"/>
+    <rect x="840" y="0" width="60" height="22" fill="url(#tickerGrad)" transform="scale(-1,1) translate(-900,0)"/>
+
+    <!-- ═══ SCROLLING TICKER TAPE (bottom) ═══ -->
+    <rect x="0" y="278" width="900" height="22" fill="#000d00" opacity="0.9"/>
+    <rect x="0" y="277.5" width="900" height="0.5" fill="#00ff41" opacity="0.3"/>
+    <g clip-path="url(#clip)">
+      <text font-family="'Courier New', monospace" font-size="10" y="292" fill="#00e5ff" opacity="0.85" letter-spacing="0.5">
+        <animate attributeName="x" values="-2400;900" dur="20s" repeatCount="indefinite" calcMode="linear"/>
+        ▲ JPM  198.40  +0.77%    ▼ BAC  38.12  -0.34%    ▲ GS  468.55  +1.18%    ▲ V  275.90  +0.62%    ▼ WMT  63.44  -0.21%    ▲ DIS  111.80  +1.44%    ▼ NFLX  628.33  -0.95%    ▲ AMD  178.25  +2.88%    ▼ INTC  30.18  -1.55%    ▲ CRM  302.10  +1.02%    ▲ PYPL  62.77  +0.48%    ▼ UBER  71.34  -0.33%
+      </text>
+    </g>
+    <rect x="0" y="278" width="60" height="22" fill="#000d00" opacity="0.9"/>
+    <rect x="840" y="278" width="60" height="22" fill="#000d00" opacity="0.9"/>
+
+    <!-- ═══ CENTER GLOW ═══ -->
+    <ellipse cx="450" cy="150" rx="280" ry="130" fill="url(#centerGlow)" opacity="0.8"/>
+
+    <!-- ═══ MAIN TEXT ═══ -->
+    <g filter="url(#bigGlow)">
+      <!-- Eyebrow label -->
+      <text x="450" y="112" font-family="'Courier New', monospace" font-size="10" letter-spacing="8" fill="#00ff41" text-anchor="middle" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.7" dur="0.8s" begin="0.3s" fill="freeze" calcMode="discrete"/>
+        <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" begin="1.1s" repeatCount="indefinite"/>
+        ── MARKETS OPEN ──
+      </text>
+
+      <!-- Main line 1 -->
+      <text x="450" y="162"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="48" font-weight="700" letter-spacing="-1"
+        fill="url(#greenGrad)" text-anchor="middle" opacity="0">
+        <animate attributeName="opacity" values="0;0;1" dur="0.6s" begin="0.6s" fill="freeze" calcMode="discrete"/>
+        making things
+      </text>
+
+      <!-- Main line 2 — gold accent -->
+      <text x="450" y="208"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="48" font-weight="700" letter-spacing="-1"
+        fill="url(#goldGrad)" text-anchor="middle" opacity="0">
+        <animate attributeName="opacity" values="0;0;1" dur="0.6s" begin="1.0s" fill="freeze" calcMode="discrete"/>
+        on the internet
+      </text>
+    </g>
+
+    <!-- UNDERLINE draws itself -->
+    <line x1="450" y1="220" x2="450" y2="220" stroke="#00ff41" stroke-width="1" opacity="0.5" stroke-linecap="round">
+      <animate attributeName="x1" values="450;220;220" dur="0.7s" begin="1.6s" fill="freeze"/>
+      <animate attributeName="x2" values="450;680;680" dur="0.7s" begin="1.6s" fill="freeze"/>
+    </line>
+
+    <!-- ═══ LIVE PRICE COUNTERS — flanking the text ═══ -->
+    <!-- Left mini panel -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1" dur="0.5s" begin="1.8s" fill="freeze" calcMode="discrete"/>
+      <rect x="195" y="128" width="96" height="50" rx="5" fill="#000a00" fill-opacity="0.8" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.5"/>
+      <text x="243" y="146" font-family="'Courier New', monospace" font-size="8" fill="#888888" text-anchor="middle" letter-spacing="2">BTC/USD</text>
+      <text x="243" y="162" font-family="'Courier New', monospace" font-size="13" font-weight="bold" fill="#00ff41" text-anchor="middle">
+        <animate attributeName="textContent" values="67,842;67,855;67,869;67,882;67,901;67,916;67,930;67,842" dur="8s" repeatCount="indefinite"/>
+        67,842
+      </text>
+      <text x="243" y="173" font-family="'Courier New', monospace" font-size="8" fill="#00ff41" text-anchor="middle" opacity="0.7">
+        <animate attributeName="textContent" values="▲ +2.34%;▲ +2.36%;▲ +2.39%;▲ +2.41%;▲ +2.44%;▲ +2.46%;▲ +2.48%;▲ +2.34%" dur="8s" repeatCount="indefinite"/>
+        ▲ +2.34%
+      </text>
+    </g>
+
+    <!-- Right mini panel -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1" dur="0.5s" begin="2.0s" fill="freeze" calcMode="discrete"/>
+      <rect x="609" y="128" width="96" height="50" rx="5" fill="#000a00" fill-opacity="0.8" stroke="#00e5ff" stroke-width="0.5" stroke-opacity="0.5"/>
+      <text x="657" y="146" font-family="'Courier New', monospace" font-size="8" fill="#888888" text-anchor="middle" letter-spacing="2">SPX</text>
+      <text x="657" y="162" font-family="'Courier New', monospace" font-size="13" font-weight="bold" fill="#00e5ff" text-anchor="middle">
+        <animate attributeName="textContent" values="5,218.4;5,219.1;5,220.8;5,222.3;5,224.0;5,225.7;5,227.1;5,218.4" dur="8s" repeatCount="indefinite"/>
+        5,218.4
+      </text>
+      <text x="657" y="173" font-family="'Courier New', monospace" font-size="8" fill="#00e5ff" text-anchor="middle" opacity="0.7">
+        <animate attributeName="textContent" values="▲ +0.87%;▲ +0.89%;▲ +0.91%;▲ +0.93%;▲ +0.95%;▲ +0.97%;▲ +0.99%;▲ +0.87%" dur="8s" repeatCount="indefinite"/>
+        ▲ +0.87%
+      </text>
+    </g>
+
+    <!-- ═══ SCAN LINE ═══ -->
+    <rect x="0" y="0" width="900" height="1.5" fill="#00ff41" opacity="0" filter="url(#scanBlur)">
+      <animate attributeName="y" values="22;278" dur="5s" repeatCount="indefinite" calcMode="linear"/>
+      <animate attributeName="opacity" values="0;0.18;0.18;0" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ═══ BORDER ═══ -->
+    <rect width="900" height="300" rx="14" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
+    <rect width="900" height="300" rx="14" fill="none" stroke="#00ff41" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" values="0;0.15;0" dur="4s" repeatCount="indefinite"/>
+    </rect>
+
+  </g>
+</svg>
